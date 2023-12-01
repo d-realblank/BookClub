@@ -2,7 +2,7 @@
 
 <h1>login</h1>
 
-<form action="/login" method="POST">
+<form action="includes/login.inc.php" method="POST">
     <input type="text" name="username"
            placeholder="username">
     <input type="password" name="password"

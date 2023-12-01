@@ -2,8 +2,6 @@
 :
 
 index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
->
-subscribe.html,4\3\43bca2874b896b1ddcdad3ca41d7d8421fac1ddf
 =
 .editorconfig,6\2\626a747c8694eaae66f2afb3d1a745b045782c70
 <
@@ -91,8 +89,6 @@ doc/TOC.md,8\a\8af1bac8bac09719039603dfa4fa9c2f5ee5421d
 Q.idea/sonarlint/securityhotspotstore/7/a/7abe29ddf411be9d662344990514efaff5e155d2,5\1\5135785d41101eba1108fac8bbe03f2afabf9869
 
 Q.idea/sonarlint/securityhotspotstore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,c\3\c3e3201c194adfd74706ea4e2781411564ebf9c7
-
-Q.idea/sonarlint/securityhotspotstore/1/7/17d8c54710fb8024dc4ea695bf6080b4e396443d,0\3\03386d2f652fd412cb61117de1ecc0c63ec586fe
 w
 G.idea/sonarlint/issuestore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,8\0\8050271519d74368de2d0668fefbf904692e94c7
 B
@@ -103,3 +99,13 @@ B
 views/forgot.php,6\c\6c41c68c13207490bebfc2cccac5928fd71c84cf
 ?
 views/login.php,7\0\705407db1ccc76d70928426aa9e1a3258af04caa
+I
+includes/dbConfig.inc.php,1\6\163b9fdbd8bee78c6b5db0964cb0f29df345cefc
+J
+includes/functions.inc.php,e\b\ebc9a41f83eff9fa18202e8106f6e5779782dab9
+G
+includes/signup.inc.php,e\d\ed1acf717044f11f1b3eac3168415632bf78b61f
+F
+includes/login.inc.php,1\3\13bc2dba69feb0a270e162af69748f9424e34a3d
+@
+views/signup.php,4\7\4775799cc804111cc159cdbb63c32940e6a4a722
