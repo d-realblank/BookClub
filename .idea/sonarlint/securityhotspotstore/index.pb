@@ -22,8 +22,6 @@ A
 >
 .gitattributes,2\4\24139dae656713ba861751fb2c2ac38839349a7a
 Å
-Q.idea/sonarlint/securityhotspotstore/4/3/43bca2874b896b1ddcdad3ca41d7d8421fac1ddf,c\1\c189dfc9548ffa43c0014fe868a3439fb115fb87
-Å
 Q.idea/sonarlint/securityhotspotstore/f/6/f6013a00b362253c64368d6eebc50ea2131754e2,7\9\796ba26502cdd66b0127ed38af677b753d8d3862
 Å
 Q.idea/sonarlint/securityhotspotstore/6/2/626a747c8694eaae66f2afb3d1a745b045782c70,4\7\47d8427ee357b5ac018788b44a19bf2b341db222
@@ -39,8 +37,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
-w
-G.idea/sonarlint/issuestore/4/3/43bca2874b896b1ddcdad3ca41d7d8421fac1ddf,f\7\f79ddf8de9503e2a6b0ac75988b49e705cb18331
 ;
 LICENSE.txt,7\9\79b82ce9b64a924266619555502f890dd80c83b9
 w
@@ -91,8 +87,6 @@ Q.idea/sonarlint/securityhotspotstore/7/a/7abe29ddf411be9d662344990514efaff5e155
 Q.idea/sonarlint/securityhotspotstore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,c\3\c3e3201c194adfd74706ea4e2781411564ebf9c7
 w
 G.idea/sonarlint/issuestore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,8\0\8050271519d74368de2d0668fefbf904692e94c7
-B
-views/register.php,d\4\d4fccf82a94dbf17f9f5843a5d7a838d1c17b6da
 >
 views/home.php,1\d\1d8a41bb6e15ab1b64e17624638a508516954df1
 @
@@ -109,3 +103,7 @@ F
 includes/login.inc.php,1\3\13bc2dba69feb0a270e162af69748f9424e34a3d
 @
 views/signup.php,4\7\4775799cc804111cc159cdbb63c32940e6a4a722
+G
+includes/logout.inc.php,4\8\4852b4e72f1e3c6aacf5ef66c9b472867d90dde6
+<
+packages.txt,c\9\c92d1cff5fdc90f19d2be5ebba8f452f2a1e317c

@@ -1,4 +1,8 @@
-// Filename - views/register.ejs
+// Filename - views/register.php
+<?php
+// Include the database configuration file
+include_once 'includes/dbConfig.inc.php';
+?>
 
 <h1> Sign up form </h1>
 
