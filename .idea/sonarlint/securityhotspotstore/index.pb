@@ -14,8 +14,6 @@ A
 css/subscribe.css,7\a\7abe29ddf411be9d662344990514efaff5e155d2
 ?
 js/subscribe.js,e\1\e183fb2b392a28588f530edb7f05aea84e90781a
-A
-php/subscribe.php,1\7\17d8c54710fb8024dc4ea695bf6080b4e396443d
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -97,3 +95,11 @@ Q.idea/sonarlint/securityhotspotstore/e/1/e183fb2b392a28588f530edb7f05aea84e9078
 Q.idea/sonarlint/securityhotspotstore/1/7/17d8c54710fb8024dc4ea695bf6080b4e396443d,0\3\03386d2f652fd412cb61117de1ecc0c63ec586fe
 w
 G.idea/sonarlint/issuestore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,8\0\8050271519d74368de2d0668fefbf904692e94c7
+B
+views/register.php,d\4\d4fccf82a94dbf17f9f5843a5d7a838d1c17b6da
+>
+views/home.php,1\d\1d8a41bb6e15ab1b64e17624638a508516954df1
+@
+views/forgot.php,6\c\6c41c68c13207490bebfc2cccac5928fd71c84cf
+?
+views/login.php,7\0\705407db1ccc76d70928426aa9e1a3258af04caa
