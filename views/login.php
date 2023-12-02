@@ -2,7 +2,7 @@
 
 <h1>login</h1>
 
-<form action="includes/login.inc.php" method="POST">
+<form action="../includes/login.inc.php" method="POST">
     <input type="text" name="username"
            placeholder="username">
     <input type="password" name="password"
@@ -10,4 +10,4 @@
     <a href="/forgot">forgot password</a>
     <button>login</button>
 </form>
-<p>Don't have an account?</p><a href="/register">Register</a>
+<p>Don't have an account?</p><a href="/signup">Register</a>
