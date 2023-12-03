@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Book Club Web App</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/> 
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <style>
+    .card {
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .card-img {
+      object-fit: cover;
+      height: 70%; /* Adjust as needed */
+      width: 100%;
+    }
+
+    .card-title {
+      text-align: center;
+      padding: 10px; /* Add padding for better aesthetics */
+    }
+
+    .card-content {
+      opacity: 0;
+      transition: opacity 0.5s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+      color: rgb(0, 0, 0)909;
+      font-size: 1.2rem; 
+    }
+
+    .card:hover .card-content {
+      opacity: 1;
+    }
+
+    .card:hover .card-img {
+      opacity: 0;
+    }
+
+    .btn-bottom {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #ED553B;
+      border: 2px solid #ED553B;
+      color: #ffffff;
+    }
+
+    .btn-view{
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 2px solid #ED553B;
+      color: #ED553B;
+    }
+
+    </style>
+    
+    
+</head>
+<body>
+
+    <header>
+        
+        <p>Connect, explore, and discuss the world of books.</p>
+    </header>
+
+    <nav>
+        <!-- Navigation links can go here -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#join">Join Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="container mb-4">
+            <h1>Bookclubs</h1>
+        </div>
+
+        <div class="container mt-5 mb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-title">
+                  <h5>Pages & Prose Society</h5>
+                </div>
+                <img src="assets/images/adventure.png" class="card-img" alt="Image 1">
+                <div class="card-content">
+                  <p>Unveil the magic between the lines—Pages & Prose Society invites you on a literary
+                     journey through enchanting worlds and soul-stirring narratives. </p>
+                </div>
+                <button class="btn btn-bottom">Join</button>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-title">
+                  <h5>Eclectic Explorations Book Club</h5>
+                </div>
+                <img src="assets/images/philo.png" class="card-img" alt="Image 2">
+                <div class="card-content">
+                  <p>Join the Eclectic Explorations Book Club, where each selection is an adventure waiting to unfold. 
+                    Connect with readers who share a passion for the unexpected.</p>
+                </div>
+                <button class="btn btn-view">View</button>
+              </div>
+            </div>
+      
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-title">
+                  <h5>Mind & Matter Book Circle</h5>
+                </div>
+                <img src="assets/images/poetry.png" class="card-img" alt="Image 3">
+                <div class="card-content">
+                  <p>Stimulate mind and heart with Mind & Matter Book Circle, where intellectual explorations meet
+                     emotional resonance. Foster a community that appreciates literature's profound impact.</p>
+                </div>
+                <button class="btn btn-view">View</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mb-3">
+            <h1>Pioneer a new community</h1>
+            <p style="font-size: 1.2rem"> Create your very own book club now!</p>
+            <button class="btn" style="background-color: #ED553B; color: #ffffff">Start</button>
+        </div>
+      </main>
+
+      
+    <footer>
+        <p>Contact us at: yourbookclub@example.com</p>
+    </footer>
+</body>
+</html>
