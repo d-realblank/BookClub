@@ -2,8 +2,6 @@
 :
 
 index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
->
-subscribe.html,4\3\43bca2874b896b1ddcdad3ca41d7d8421fac1ddf
 =
 .editorconfig,6\2\626a747c8694eaae66f2afb3d1a745b045782c70
 <
@@ -12,8 +10,6 @@ A
 css/normalize.css,e\9\e9b0acb935a57febf91eee98bba0eedd1c156453
 A
 css/subscribe.css,7\a\7abe29ddf411be9d662344990514efaff5e155d2
-?
-js/subscribe.js,e\1\e183fb2b392a28588f530edb7f05aea84e90781a
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -91,15 +87,17 @@ doc/TOC.md,8\a\8af1bac8bac09719039603dfa4fa9c2f5ee5421d
 Q.idea/sonarlint/securityhotspotstore/7/a/7abe29ddf411be9d662344990514efaff5e155d2,5\1\5135785d41101eba1108fac8bbe03f2afabf9869
 
 Q.idea/sonarlint/securityhotspotstore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,c\3\c3e3201c194adfd74706ea4e2781411564ebf9c7
-
-Q.idea/sonarlint/securityhotspotstore/1/7/17d8c54710fb8024dc4ea695bf6080b4e396443d,0\3\03386d2f652fd412cb61117de1ecc0c63ec586fe
 w
 G.idea/sonarlint/issuestore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,8\0\8050271519d74368de2d0668fefbf904692e94c7
+;
+thread.html,9\a\9a82b971b0deb2db52b3e4e2983ee99e371499ae
 B
-views/register.php,d\4\d4fccf82a94dbf17f9f5843a5d7a838d1c17b6da
->
-views/home.php,1\d\1d8a41bb6e15ab1b64e17624638a508516954df1
-@
-views/forgot.php,6\c\6c41c68c13207490bebfc2cccac5928fd71c84cf
+views/profile.html,f\9\f9903f24ac5a873f4d0b34472480018483d0a60d
+J
+views/bookclublanding.html,2\7\275da2f232c9e5df843924bc618e6148fb0e3b31
+C
+views/bookclub.html,6\a\6a85d8925dcc52f347ec81a033ad751096cefc67
+A
+views/thread.html,5\e\5e8708d79879fa6de0f775e61ee4914fc7984c96
 ?
-views/login.php,7\0\705407db1ccc76d70928426aa9e1a3258af04caa
+js/dataforum.js,6\8\68690896efa780b055ab3f82e5cdb92902e0936b
