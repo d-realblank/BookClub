@@ -103,3 +103,7 @@ B
 views/forgot.php,6\c\6c41c68c13207490bebfc2cccac5928fd71c84cf
 ?
 views/login.php,7\0\705407db1ccc76d70928426aa9e1a3258af04caa
+?
+css/signUp.html,d\0\d006579c6b22e494d5eec0b24a989fafee052002
+A
+views/signUp.html,a\b\ab7592daa6c94a9147526e08fe6d9420856b50b4
