@@ -115,3 +115,7 @@ A
 images/x-lg.svg,3\1\316d6559aa876bc1bd1a07a058014bd7f838456b
 ?
 images/list.svg,a\3\a312b88d78715b35d4185f808b36ce6bc6dbc932
+A
+views/signUp.html,a\b\ab7592daa6c94a9147526e08fe6d9420856b50b4
+C
+views/homePage.html,1\c\1c16ab19f1a37f7776e33fbdfceb7bfcefd52bcb
