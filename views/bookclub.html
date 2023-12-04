@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <style>
+      .page-title {
+      background-color:#E5F0FF;
+      color: black; /* Set your desired text color */
+      padding: 15px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .sub-title {
+      color: black; /* Set your desired text color */
+      padding: 15px;
+      text-align: center;
+    }
+
+    .book-month {
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .body {
+      margin: 10px 60px;
+        }
+
+    .h1, .h4, .ol {
+      margin: 0;
+        }
+
+    .p {
+      margin: 5px 0;
+        }
+
+    .textarea {
+      width: 80%;
+      height: 80px;
+        }
+
+    .button {
+      display: block;
+      margin: 10px 0;
+        }
+
+    .top-bar {
+      background-color: skyblue;
+      padding: 0 40px;
+        }
+
+    .main {
+      background-color: #F6F6EF;
+      padding: 10px 40px;
+        }
+
+    .comments {
+       margin: 40px 0;
+        }
+
+    .comment {
+      margin: 10px 0;
+        }
+
+    .row {
+      padding: 5px 0;
+        }
+
+    .bottom, .top-comment {
+      display: flex;
+      color: grey;
+      font-size: 12px;
+        }
+
+    .timestamp {
+      padding-right: 10px;
+        }
+
+    .comment-ts {
+      padding-left: 10px;
+        }
+
+    /* Added new style for thread links */
+    .title h4 {
+      color: black;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .title h4:hover {
+      background-color: #ED553B;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-title">
+    <h1>Pages & Prose Society</h1>
+    <h4>33 members and counting</h4>
+    <p>Unveiling the magic between the lines, Pages & Prose Society invites members on a literary journey through enchanting worlds and soul-stirring narratives. From contemporary gems to timeless classics, each monthly pick promises spirited discussions and a celebration of the written word</p>
+  </div>
+
+  <div class="container">
+    <h2 class="sub-title">This month's reading:</h2>
+    <img src="../assets/images/catcherandrye.jpg" class="book-month" alt="Book 1">
+    <p style="font-weight: bold;"> The Catcher in the Rye</p>
+    <p > J. D. Salinger</p>
+  </div>
+
+  <div class="container">
+    <h2 class="sub-title">Forum - Share your thoughts: </h2>
+    <!-- Add an OL element with class "threads" -->
+    <ol class="threads"></ol>
+  </div>
+
+  <div class="container">
+    <!-- Your existing content -->
+
+    <!-- New thread form -->
+    <div class="thread-form">
+      <h2>Start a new thread</h2>
+      <form id="newThreadForm">
+        <div class="mb-3">
+          <label for="threadTitle" class="form-label">Title</label>
+          <input type="text" class="form-control" id="threadTitle" placeholder="Enter thread title" required>
+        </div>
+        <div class="mb-3">
+          <label for="threadContent" class="form-label">Text</label>
+          <textarea class="form-control" id="threadContent" placeholder="Share your opinion on the book of the month" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn" style="background-color: #ED553B; color: white;">Post</button>
+      </form>
+    </div>
+
+    <!-- Thread list -->
+    <h2 class="sub-title">Read and add to the conversation </h2>
+    <ol class="threads-list"></ol>
+  </div>
+
+  <script src="../js/dataforum.js"></script>
+<script>
+  // Ensure threads array is defined
+  var threads = threads || [];
+  console.log(threads);
+  var container = document.querySelector('.threads-list'); // Change the selector
+  for (let thread of threads) {
+    var html = `
+      <li class="row">
+        <a href="thread.html?${thread.id}" style="text-decoration:none; color:black;" onmouseover="this.style.color='#ED553B'; this.style.backgroundColor='#E5F0FF';"
+     onmouseout="this.style.color='black'; this.style.textDecoration='none'; this.style.backgroundColor='transparent';"> <!-- Added a class -->
+          <h4 styleclass="title">
+            ${thread.title}
+          </h4>
+          <div class="bottom">
+            <p class="timestamp">
+              ${new Date(thread.date).toLocaleString()}
+            </p>
+            <p class="comment-count">
+              ${thread.comments.length} comments
+            </p>
+          </div>
+        </a>
+      </li>
+    `;
+    container.insertAdjacentHTML('beforeend', html);
+  }
+
+// New script for handling thread creation
+document.getElementById('newThreadForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Get values from the form
+  var threadTitle = document.getElementById('threadTitle').value;
+  var threadContent = document.getElementById('threadContent').value;
+
+  // Create a new thread object
+  var newThread = {
+    id: threads.length + 1, // Ensure a unique ID
+    title: threadTitle,
+    content: threadContent,
+    date: new Date(),
+    comments: [] // Initially, no comments
+  };
+
+  // Add the new thread to the threads array
+  threads.push(newThread);
+
+  // Update the threads list
+  var container = document.querySelector('.threads-list');
+  var html = `
+    <li class="row">
+      <a style="text-decoration:none; color:black;" onmouseover="this.style.color='#ED553B'; this.style.backgroundColor='#E5F0FF';"
+     onmouseout="this.style.color='black'; this.style.textDecoration='none'; this.style.backgroundColor='transparent';" href="thread.html?${newThread.id}" ">
+        <h4 class="title">${newThread.title}</h4>
+        <div class="bottom">
+          <p class="timestamp">${newThread.date.toLocaleString()}</p>
+          <p class="comment-count">0 comments</p>
+        </div>
+      </a>
+    </li>
+  `;
+  container.insertAdjacentHTML('beforeend', html);
+
+  // Update threads array in localStorage
+  localStorage.setItem('threads', JSON.stringify(threads));
+
+  // Clear the form after submission
+  this.reset();
+});
+
+</script>
+
+</body>
+</html>

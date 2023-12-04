@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Book Club Web App</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <style>
+        /* Define your custom badge color */
+        .custom-badge {
+            font-size: 1.25em;
+            background-color: #ED553B;
+            color: #ffffff;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .custom-button {
+            background-color: #ED553B;
+            color: #ffffff;
+            margin-left: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Custom styles for the progress tracker */
+        .custom-progress {
+            background-color: #ED553B; /* Replace with your desired color code */
+        }
+
+        /* Custom styles for the book covers section */
+        .book-cover {
+            max-width: 50%;
+            /* Ensure the image doesn't exceed its container */
+            height: auto;
+            /* Maintain aspect ratio */
+            border: 1px solid #ddd;
+            /* Optional: Add a border for styling */
+            border-radius: 8px;
+            /* Optional: Add border radius for styling */
+            margin: 10px auto; /* Center the book cover horizontally */
+            display: block; /* Make it a block-level element for centering */
+        }
+
+        /* Custom styles for the book details (title and author) */
+        .book-details {
+            text-align: center;
+            /* Center the text */
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <h1>Your Book Club</h1>
+        <p>Connect, explore, and discuss the world of books.</p>
+    </header>
+
+    <nav>
+        <!-- Navigation links can go here -->
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#join">Join Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container mb-4">
+            <h2>Emily Morrison</h2>
+            <p>Emily Morrison, a passionate bibliophile and technology enthusiast, brings a unique blend of literary appreciation and a keen interest in innovative digital solutions.
+                With a background in journalism and a love for storytelling, Emily is on a mission to bridge
+                the gap between traditional book clubs and the dynamic possibilities offered by modern technology.</p>
+        </div>
+
+        <div class="container mb-4">
+            <h2>My personal taste</h2>
+            <span class="badge badge-sm custom-badge">Contemporary Fiction</span>
+            <span class="badge badge-sm custom-badge">Science Fiction</span>
+            <span class="badge badge-sm custom-badge">Non-Fiction Essays</span>
+            <span class="badge badge-sm custom-badge">Historical Fiction</span>
+            <span class="badge badge-sm custom-badge">Technology and Science</span>
+            <span class="badge badge-sm custom-badge">Fantasy</span>
+        </div>
+
+        <section id="currently-reading" class="mb-4">
+            <div class="container">
+                <h2>What I'm Currently Reading</h2>
+                <div class="row">
+                    <div class="col-md-2 mb-2">
+                        <div class="card h-100 d-flex flex-column">
+                            <img src="../assets/images/catcherandrye.jpg" class="card-img-top book-cover mx-auto" alt="Book 1">
+                            <div class="card-body flex-fill">
+                                <h5 class="card-title book-details">The Catcher in the Rye </h5>
+                                <p class="card-text book-details">J. D. Sallinger</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar custom-progress" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60% Complete</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 mb-2">
+                        <div class="card h-100 d-flex flex-column">
+                            <img src="../assets/images/normalppl.jpeg" class="card-img-top book-cover mx-auto" alt="Book 2">
+                            <div class="card-body flex-fill">
+                                <h5 class="card-title book-details">Normal People</h5>
+                                <p class="card-text book-details">Sally Rooney</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar custom-progress" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80% Complete</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat similar structure for other books -->
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <h2>My book clubs</h2>
+
+            <div class="row">
+                <div class="col-sm-4 mb-3">
+                    <div class="card h-100 d-flex flex-column">
+                        <div class="card-body">
+                            <h5 class="card-title">Pages & Prose Society</h5>
+                            <p class="card-text">Unveil the magic between the lines—Pages & Prose Society invites you on a literary journey through enchanting worlds and soul-stirring narratives.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="#" class="btn custom-button">Discover</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 mb-3">
+                    <div class="card h-100 d-flex flex-column">
+                        <div class="card-body">
+                            <h5 class="card-title">Eclectic Explorations Book Club</h5>
+                            <p class="card-text">Join the Eclectic Explorations Book Club, where each selection is an adventure waiting to unfold. Connect with readers who share a passion for the unexpected.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="#" class="btn custom-button">Discover</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 mb-3">
+                    <div class="card h-100 d-flex flex-column">
+                        <div class="card-body">
+                            <h5 class="card-title">Mind & Matter Book Circle</h5>
+                            <p class="card-text">Stimulate mind and heart with Mind & Matter Book Circle, where intellectual explorations meet emotional resonance. Foster a community that appreciates literature's profound impact.</p>
+                        </div>
+                        <div class="mt-auto">
+                            <a href="#" class="btn custom-button">Discover</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <footer>
+        <p>Contact us at: yourbookclub@example.com</p>
+    </footer>
+</body>
+</html>
