@@ -2,18 +2,12 @@
 :
 
 index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
->
-subscribe.html,4\3\43bca2874b896b1ddcdad3ca41d7d8421fac1ddf
 =
 .editorconfig,6\2\626a747c8694eaae66f2afb3d1a745b045782c70
 <
 css/main.css,f\a\fa343e38d93aa0d46d1a993565d0ca98d96283b4
 A
 css/normalize.css,e\9\e9b0acb935a57febf91eee98bba0eedd1c156453
-A
-css/subscribe.css,7\a\7abe29ddf411be9d662344990514efaff5e155d2
-?
-js/subscribe.js,e\1\e183fb2b392a28588f530edb7f05aea84e90781a
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -23,8 +17,6 @@ A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 >
 .gitattributes,2\4\24139dae656713ba861751fb2c2ac38839349a7a
-Å
-Q.idea/sonarlint/securityhotspotstore/4/3/43bca2874b896b1ddcdad3ca41d7d8421fac1ddf,c\1\c189dfc9548ffa43c0014fe868a3439fb115fb87
 Å
 Q.idea/sonarlint/securityhotspotstore/f/6/f6013a00b362253c64368d6eebc50ea2131754e2,7\9\796ba26502cdd66b0127ed38af677b753d8d3862
 Å
@@ -41,8 +33,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
-w
-G.idea/sonarlint/issuestore/4/3/43bca2874b896b1ddcdad3ca41d7d8421fac1ddf,f\7\f79ddf8de9503e2a6b0ac75988b49e705cb18331
 ;
 LICENSE.txt,7\9\79b82ce9b64a924266619555502f890dd80c83b9
 w
@@ -88,22 +78,8 @@ doc/TOC.md,8\a\8af1bac8bac09719039603dfa4fa9c2f5ee5421d
 <
 doc/usage.md,3\a\3a558419bf6895c211bcd529dc759abb23017a9c
 Å
-Q.idea/sonarlint/securityhotspotstore/7/a/7abe29ddf411be9d662344990514efaff5e155d2,5\1\5135785d41101eba1108fac8bbe03f2afabf9869
-Å
 Q.idea/sonarlint/securityhotspotstore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,c\3\c3e3201c194adfd74706ea4e2781411564ebf9c7
-Å
-Q.idea/sonarlint/securityhotspotstore/1/7/17d8c54710fb8024dc4ea695bf6080b4e396443d,0\3\03386d2f652fd412cb61117de1ecc0c63ec586fe
 w
 G.idea/sonarlint/issuestore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,8\0\8050271519d74368de2d0668fefbf904692e94c7
-B
-views/register.php,d\4\d4fccf82a94dbf17f9f5843a5d7a838d1c17b6da
->
-views/home.php,1\d\1d8a41bb6e15ab1b64e17624638a508516954df1
-@
-views/forgot.php,6\c\6c41c68c13207490bebfc2cccac5928fd71c84cf
-?
-views/login.php,7\0\705407db1ccc76d70928426aa9e1a3258af04caa
-?
-css/signUp.html,d\0\d006579c6b22e494d5eec0b24a989fafee052002
 A
 views/signUp.html,a\b\ab7592daa6c94a9147526e08fe6d9420856b50b4
