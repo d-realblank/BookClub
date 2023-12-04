@@ -8,7 +8,7 @@
     <title>Sign-In</title>
     <style>
         body {
-            font-family: Semi Bold, sans-serif;
+            font-family: Semi Bold;
             margin: 0; 
         }
 
@@ -68,11 +68,10 @@
             text-decoration: underline;
         }
 
-        
         .bluebox {
             position: absolute;
             left: 981px;
-            right:auto;
+            right: auto;
             top: 27.5px;
             width: 500px;
             height: 550px;
@@ -90,21 +89,21 @@
 <body>
     <div class="signin">
         <h1>SIGN IN</h1>
-        <form id="signin-form">
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Sign Up</button>
+        <form id="signin-form" action="homePage.html" method="GET">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit" class="view-more-button">Log In</button>
         </form>
         <p>Don't have an Account? <a href="signUp.html">Sign Up Now!</a></p>
     </div>
 
-        <div class="bluebox">
-            <img src="/Users/safaaraed/Downloads/1200px-What-book-should-i-read-quiz-image-removebg-preview (1).png" alt="Your Image">
-        </div>
+    <div class="bluebox">
+        <img src="path-to-your-image.png" alt="Your Image">
+    </div>
 
     <script>
-        document.getElementById('signup-form').addEventListener('submit', function(event) {
-            event.preventDefault();
+        document.getElementById('signin-form').addEventListener('submit', function(event) {
+            
         });
     </script>
 </body>
