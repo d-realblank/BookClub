@@ -8,8 +8,8 @@
     <title>Sign-Up</title>
     <style>
         body {
-            font-family: Semi Bold, sans-serif;
-            margin: 0; /* Remove default margin */
+            font-family: Semi Bold;
+            margin: 0; 
         }
 
         .signup {
@@ -80,33 +80,36 @@
             overflow: hidden; 
         }
 
-        .bluebox img {
+         .bluebox img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
+        } 
+        
     </style>
 </head>
-<body>
-    <div class="signup">
-        <h1>SIGN UP</h1>
-        <form id="signup-form">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Register</button>
-        </form>
-        <p>Already have an Account? <a href="login.html">Login</a></p>
-    </div>
+    <body>
+        <div class="signup">
+            <h1>SIGN UP</h1>
+            <form id="signup-form" action="homePage.html" method="GET">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit" class="view-more-button">Register</button>
+            </form>
+            <p>Already have an Account? <a href="signIn.html">Sign In Now!</a></p>
+        </div>
 
         <div class="bluebox">
-            <img src="/Users/safaaraed/Downloads/1200px-What-book-should-i-read-quiz-image-removebg-preview (1).png" alt="Your Image">
+            <img src=" " alt="Your Image">
         </div>
 
     <script>
-        document.getElementById('signup-form').addEventListener('submit', function(event) {
+
+     document.getElementById('signin-form').addEventListener('submit', function(event) {
+
             event.preventDefault();
         });
     </script>
 </body>
 </html>
+
