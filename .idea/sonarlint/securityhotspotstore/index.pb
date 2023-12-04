@@ -103,3 +103,5 @@ B
 views/forgot.php,6\c\6c41c68c13207490bebfc2cccac5928fd71c84cf
 ?
 views/login.php,7\0\705407db1ccc76d70928426aa9e1a3258af04caa
+I
+views/forgotPassword.html,3\a\3a0378369c26b9dabdfdd8d611086c59a92582f9
