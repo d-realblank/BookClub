@@ -22,7 +22,7 @@ body {
     line-height: 1.5;
 }
 
-.navbar .nav-container {
+.navbar .container {
   display: flex;
   align-items: center;
     justify-content: space-between;
@@ -34,7 +34,7 @@ body {
     margin-right: 10px;
 }
 
-.navbar a{
+.navbar a, i{
     text-decoration: none;
     color: #000000;
     font-size: 16px;
@@ -44,8 +44,9 @@ body {
     align-items: center;
 }
 
-.navbar a:hover{
+.navbar a:hover, i:hover{
     color: #ed553b;
+    cursor: pointer;
 }
 
 a, a:hover, a:focus {

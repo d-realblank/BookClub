@@ -8,8 +8,6 @@ index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
 css/main.css,f\a\fa343e38d93aa0d46d1a993565d0ca98d96283b4
 A
 css/normalize.css,e\9\e9b0acb935a57febf91eee98bba0eedd1c156453
-?
-js/subscribe.js,e\1\e183fb2b392a28588f530edb7f05aea84e90781a
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -19,8 +17,6 @@ A
 package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
 >
 .gitattributes,2\4\24139dae656713ba861751fb2c2ac38839349a7a
-Å
-Q.idea/sonarlint/securityhotspotstore/4/3/43bca2874b896b1ddcdad3ca41d7d8421fac1ddf,c\1\c189dfc9548ffa43c0014fe868a3439fb115fb87
 Å
 Q.idea/sonarlint/securityhotspotstore/f/6/f6013a00b362253c64368d6eebc50ea2131754e2,7\9\796ba26502cdd66b0127ed38af677b753d8d3862
 Å
@@ -37,8 +33,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 <
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
-w
-G.idea/sonarlint/issuestore/4/3/43bca2874b896b1ddcdad3ca41d7d8421fac1ddf,f\7\f79ddf8de9503e2a6b0ac75988b49e705cb18331
 ;
 LICENSE.txt,7\9\79b82ce9b64a924266619555502f890dd80c83b9
 w
@@ -83,20 +77,6 @@ doc/faq.md,3\7\37aa9ea87a21cb25abc2ad7c3f1617a74b605e7f
 doc/TOC.md,8\a\8af1bac8bac09719039603dfa4fa9c2f5ee5421d
 <
 doc/usage.md,3\a\3a558419bf6895c211bcd529dc759abb23017a9c
-Å
-Q.idea/sonarlint/securityhotspotstore/7/a/7abe29ddf411be9d662344990514efaff5e155d2,5\1\5135785d41101eba1108fac8bbe03f2afabf9869
-Å
-Q.idea/sonarlint/securityhotspotstore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,c\3\c3e3201c194adfd74706ea4e2781411564ebf9c7
-w
-G.idea/sonarlint/issuestore/e/1/e183fb2b392a28588f530edb7f05aea84e90781a,8\0\8050271519d74368de2d0668fefbf904692e94c7
-B
-views/register.php,d\4\d4fccf82a94dbf17f9f5843a5d7a838d1c17b6da
->
-views/home.php,1\d\1d8a41bb6e15ab1b64e17624638a508516954df1
-@
-views/forgot.php,6\c\6c41c68c13207490bebfc2cccac5928fd71c84cf
-?
-views/login.php,7\0\705407db1ccc76d70928426aa9e1a3258af04caa
 >
 css/footer.css,0\0\00ec8c7cb1f0846f9316bd7d8309516a60e6d0b3
 A
@@ -119,12 +99,8 @@ A
 views/signUp.html,a\b\ab7592daa6c94a9147526e08fe6d9420856b50b4
 B
 views/sign-in.html,a\e\ae3bb460d52c9ff9eff6a62dc23a7de13352e7f5
-F
-js/includedConctent.js,f\5\f52c85370211137d3c018bac3b6f05cb0588ffd1
 C
 views/bookclub.html,6\a\6a85d8925dcc52f347ec81a033ad751096cefc67
-E
-js/includedContent.js,4\d\4d8fde07c66d6036866e0c9ebb3d31df2bfff452
 J
 views/bookclublanding.html,2\7\275da2f232c9e5df843924bc618e6148fb0e3b31
 F
@@ -139,3 +115,5 @@ D
 js/includeContent.js,6\1\619cd4866dfed04760ad1e46811531ee4751fe4a
 G
 views/formValidate.html,c\a\ca9cfaac8c8aee4815a6f244956dcb41243ec0e3
+8
+logo.svg,1\4\145770c269c5ccc23f4a138f6649e3363a676ba0
