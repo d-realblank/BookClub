@@ -3,50 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>BookNook</title>
     <style>
         body {
             margin:0;
             padding: 0;
-            font-family: "semi bold";
+            font-family: "helvetica neue", helvetica, sans-serif;
             background-color: white;
         }
 
         .blue-rectangleHomePage {
             position: absolute;
             background-color: #E5F0FF;
-            top: 0;
+            top: 81px;
             bottom: 400px;
-            width: 100%; 
+            width: 100%;
+            z-index: -1;
         }
 
         .blue-rectangle-textHomePage {
             position: absolute;
             color: #000000;
             bottom: 70px;
-            right: 20px; 
+            right: 20px;
             left: 60px;
             font-size:16px;
-            font-weight:normal; 
-            font-family: "semi bold" ;
+            font-weight:normal;
+            font-family: "helvetica neue", helvetica, sans-serif;
         }
 
         .sectionTitleHomePage {
             margin: auto;
             font-size: 24px;
             font-weight: bold;
-            font-family: "semi bold";
+            font-family: "helvetica neue", helvetica, sans-serif;
             color: black;
-            top: 300px; 
-            position: absolute;
-            left: 50%; 
-            transform: translateX(-50%); 
+            top: 300px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .sectionTitle-textHomePage {
             color: #393280;
             text-align: center;
-            position: relative; 
+            position: relative;
             top: 20px;
             bottom: 1000px;
         }
@@ -55,7 +56,7 @@
         .book-sectionHomePage {
             margin: auto;
             top: 600px;
-            left: 5%; 
+            left: 5%;
             text-align: center;
             position: relative;
             display: flex;
@@ -64,8 +65,8 @@
         .bookHomePage {
             display: inline-block;
             margin: 20px 60px;
-            max-width: 300px; 
-            text-align: center; 
+            max-width: 300px;
+            text-align: center;
 
         }
 
@@ -89,30 +90,29 @@
             margin: auto;
             font-size: 24px;
             font-weight: bold;
-            font-family: "semi bold";
+            font-family: "inherit";
             color: black;
-            top: 250px; 
-            position: absolute;
-            left: 50%; 
+            top: 250px;
+            position: relative;
+            left: 50%;
             background-color: #E5F0FF;
-            transform: translateX(-50%); 
+            transform: translateX(-50%);
         }
 
         .sectionTitleTwo-textHomePage {
             color: #393280;
             text-align: center;
-            position: relative; 
+            position: relative;
             top: 650px;
-            text-align: center;
             bottom: 1000px;
         }
 
-        /* Second Set of Books */ 
+        /* Second Set of Books */
         .book-sectionTwoHomePage {
             margin: auto;
             top: 1000px;
             text-align: center;
-            position: relative; 
+            position: relative;
         }
 
         .bookTwoHomePage {
@@ -138,26 +138,26 @@
 
         .newsletter-section {
             background-color: #E5F0FF;
-            padding: 50px 10%; 
-            box-sizing: border-box; 
+            padding: 50px 10%;
+            box-sizing: border-box;
             top: 1350px;
-            position: absolute;
+            position: relative;
 
         }
 
         .newsletter-title {
-            margin: 0; 
+            margin: 0;
             font-size: 24px;
             font-weight: bold;
-            font-family: "semi bold";
+            font-family: "inherit";
             color: black;
-            text-align: center; 
+            text-align: center;
         }
 
         .newsletter-text {
             color: #393280;
             font-size: 16px;
-            position: relative; 
+            position: relative;
             text-align: center;
         }
 
@@ -181,7 +181,7 @@
             cursor: pointer;
             display: block;
             margin: 30px auto;
-        } 
+        }
 
 
         .about-us-button {
@@ -192,15 +192,15 @@
             border: 2px solid #393280;
             border-radius: 5px;
             cursor: pointer;
-            position: absolute; 
-            margin-top: 20px; 
-            left: 50%; 
-        
-            
+            position: relative;
+            margin-top: 20px;
+            left: 50%;
+
+
         }
 
         .view-more-button {
-            position:absolute;
+            position:relative;
             font-size: 18px;
             padding: 10px 20px;
             background-color: transparent;
@@ -208,48 +208,66 @@
             border: 2px solid #393280;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 200px; 
+            margin-top: 200px;
             left: 40%;
-            text-align: center            
+            text-align: center
         }
-
-
     </style>
 </head>
 <body>
-   
-    <div class="blue-rectangleHomePage">
-        <div class="blue-rectangle-textHomePage"> 
-            <h1>   The Book Nook  </h1><br>   
+<link rel="stylesheet" href="../css/navbar.css">
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="homePage.html"><img src="../images/logo.svg" alt=""></a>
+        </div>
+        <button class="toggle" aria-controls="nav-links" aria-expanded="false">
+            <span></span>
+        </button>
+        <ul data-visible="false" class="nav-links">
+            <li><a href="#">About us</a></li>
+            <li><a href="explorePage.html">Explore</a></li>
+            <li><a href="bookclublanding.html">Book clubs</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><i class="bi bi-bell"></i></li>
+        </ul>
+    </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="../js/trackpage.js"></script>
+
+<div class="blue-rectangleHomePage">
+        <div class="blue-rectangle-textHomePage">
+            <h1>   The Book Nook  </h1><br>
             <h4> Ever wanted a chill spot where you can gab about books,<br>
                 dive into all kinds of reads, and make some real connections? <br>
-                No fancy stuff, just good books and awesome people. Come <br> hang 
-                out, share your favorite stories, and find your next 
+                No fancy stuff, just good books and awesome people. Come <br> hang
+                out, share your favorite stories, and find your next
                 book crush with us! </h4>
 
         </div>
     </div>
-    
-    <div class="sectionTitleHomePage"> 
+
+    <div class="sectionTitleHomePage">
         <div class="sectionTitle-textHomePage"> Join a book club now! </div>
     </div>
 
     <div class="book-sectionHomePage">
         <div class="bookHomePage">
-            <img src="img/bookwormsUnite.jpg" alt="BookwormsUnite">
+            <img src="../img/bookwormsUnite.jpg" alt="BookwormsUnite">
             <div class="book-titleHomePage">Bookworms Unite</div>
-            <div class="book-descriptionHomePage">Explore classic literature with Bookworms Unite. 
+            <div class="book-descriptionHomePage">Explore classic literature with Bookworms Unite.
                 Join our community for engaging discussions, literary analyses, and a shared love for timeless books.</div>
         </div>
 
         <div class="bookHomePage">
-            <img src="img/sciFiExplorers.jpg" alt="SciFiExplorers">
+            <img src="../img/scifiexplorers.jpg" alt="SciFiExplorers">
             <div class="book-titleHomePage"> Sci-Fi Explorers </div>
             <div class="book-descriptionHomePage">Dive into futuristic worlds with Sci-Fi Explorers. Whether you're a seasoned sci-fi enthusiast or a newcomer, join us for discussions on mind-bending concepts and alternate realities.</div>
         </div>
 
         <div class="bookHomePage">
-            <img src="img/mysteryDetectivesjpg" alt="MysteryDetectives">
+            <img src="../img/mysteryDetectives.jpg" alt="MysteryDetectives">
             <div class="book-titleHomePage">Mystery Detectives</div>
             <div class="book-descriptionHomePage">Uncover thrilling mysteries with Mystery Detectives. If you love suspense, crime-solving, and unexpected twists, join our club for engaging discussions and connect with fellow mystery enthusiasts.</div>
         </div>
@@ -258,31 +276,31 @@
 
     </div>
 
-    <div class="sectionTitleTwoHomePage"> 
+    <div class="sectionTitleTwoHomePage">
         <div class="sectionTitleTwo-textHomePage"> Discover New Books </div>
     </div>
 
     <div class="book-sectionTwoHomePage">
         <div class="bookTwoHomePage">
-            <img src="img/normalPeople.jpg" alt="normalPeople">
+            <img src="../img/sallyRooney.jpg" alt="normalPeople">
             <div class="book-titleTwoHomePage">Normal People</div>
-            <div class="book-authorHomePage">Sally Roonney</div>
+            <div class="book-authorHomePage">Sally Rooney</div>
         </div>
 
         <div class="bookTwoHomePage">
-            <img src="img/theyCalledMeNumberOne.jpg" alt="theyCalledMeNumberOne">
+            <img src="../img/numberOne.jpg" alt="theyCalledMeNumberOne">
             <div class="book-titleTwoHomePage">They Called Me Number One </div>
             <div class="book-authorHomePage">Bev Sellars</div>
         </div>
 
         <div class="bookTwoHomePage">
-            <img src="img/surroundedByIdiots.jpg" alt="surroundedByIdiots">
+            <img src="../img/surroundedbyidiots.jpg" alt="surroundedByIdiots">
             <div class="book-titleTwoHomePage">Surrounded by Idiots</div>
             <div class="book-authorHomePage">Thomas Eriskon</div>
         </div>
 
         <div class="bookTwoHomePage">
-            <img src="img/theAmericanHeress.jpg" alt="theAmericanHeress">
+            <img src="../img/americanHeiress.jpg" alt="theAmericanHeress">
             <div class="book-titleTwoHomePage">The American Heiress</div>
             <div class="book-authorHomePage">Daisy Goodwin</div>
         </div>
@@ -296,6 +314,54 @@
         <input type="email" class="email-input" placeholder="Your Email Address">
         <button class="subscribe-button">Subscribe</button>
     </div>
+
+
+<link rel="stylesheet" href="../css/footer.css">
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <img src="../images/logo.svg" alt="">
+            </div>
+            <div class="footer-col">
+                <div class="address">
+                    <h4>308 Negra Arroyo Lane Albuquerque, New Mexico 44635</h4>
+                </div>
+                <div class="phone">
+                    <p>(###) 546-4356</p>
+                </div>
+                <div class="email-text">
+                    <p> <a href="mailto:contact@liftagencyr.com">yourbookclub@example.com</a></p>
+                </div>
+
+            </div>
+            <div class="footer-col">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="explorePage.html">Explore</a></li>
+                    <li><a href="bookclublanding.html">Book clubs</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#" style="font-weight: bold;">Settings</a></li>
+                </ul>
+                <div class="copyright">
+                    <p>&copy; 2023 Void Media. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="footer-col">
+                <div class="social-links">
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 </html>
